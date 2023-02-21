@@ -2,15 +2,16 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './component/header'
-import Data from './component/Data'
+
 import axios from 'axios'
+import config from './config'
 
 
 function App() {
   const [rank,setRank] = useState()
   useEffect(() => {
     async function FetchData() {
-      const data = await axios.get("http://localhost:3306")
+      const data = await axios.get(config.endpoint+ config.port)
       console.log( Array.isArray(data.data))
       data.data.sort((a,b)=> a.total.total - b.total.total)
       
@@ -20,13 +21,9 @@ function App() {
           total:value,
         }
       }))
-      // console.log(data.data[0])
-      // console.log(data.data[0].address)
-    }
 
+    }
     FetchData()
-    
-        
   },[])
   console.log(rank)
   return (
