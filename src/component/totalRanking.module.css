@@ -1,0 +1,40 @@
+.container{
+    width:1800px;
+    margin:0 auto;
+    
+    display: flex;
+    justify-content: center;
+    padding:0;
+
+    border:1px solid #9999;
+    
+}
+
+
+
+.rank{
+    width:120px;
+    height:75px;
+    border-right: 1px solid #9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.address{
+    /* border:1px solid blue; */
+    width:900px;
+    height:75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #9999;
+}
+
+.amount{
+    border-right: 1px solid #9999;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
