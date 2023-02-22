@@ -27,18 +27,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/account",
-    element: <App name={"My Reward" } />,
+    element: <App name={"Account Reward" } />,
       errorElement: <ErrorPage />,
       children:[
         {
           path:"/account",
-          element:<AccountReward/>
+          element:<AccountReward />
           },
       ]
    },
    {
       path:"/uatr",
-     element: <App name={ "uAtr"} />,
+     element: <App name={ "Atr"} />,
      errorElement: <ErrorPage />,
      children: [
        {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/uhar",
-      element: <App name={"uHar" } />,
+      element: <App name={"Har" } />,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/ucor",
-      element:<App name={"uCor"}/>,
+      element:<App name={"Cor"}/>,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -72,7 +72,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/uord",
-      element: <App name={ "uOrd"} />,
+      element: <App name={ "ORD"} />,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/scor",
-      element: <App name={"sCor" } />,
+      element: <App name={"SCOR" } />,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -94,7 +94,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/sord",
-      element: <App name={"sOrd" } />,
+      element: <App name={"SORD" } />,
       errorElement: <ErrorPage />,
       children: [
         {

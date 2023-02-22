@@ -20,13 +20,13 @@ export default function Root() {
         return {
           address: value.address,
           rank:index + 1,
-          uatr: Number(value.uatr),
-          uhar: Number(value.uhar),
-          ucor: Number(value.ucor),
-          uord: Number(value.uord),
-          scor: Number(value.scor),
-          sord: Number(value.sord),
-          total:Number(value.total)
+          uatr: Number(value.uatr)/1000000 ,
+          uhar: Number(value.uhar)/1000000,
+          ucor: Number(value.ucor)/1000000,
+          uord: Number(value.uord)/1000000,
+          scor: Number(value.scor)/1000000,
+          sord: Number(value.sord)/1000000,
+          total:Number(value.total)/1000000
         }
       })
       

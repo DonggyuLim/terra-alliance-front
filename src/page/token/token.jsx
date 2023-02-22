@@ -17,7 +17,7 @@ export default function Token({ queryKey, query }) {
         return {
           rank:index + 1,
           address: value.address,
-          amount: Number(value.amount),
+          amount: Number(value.amount)/ 1000000,
         }
       })
       console.log(newData)

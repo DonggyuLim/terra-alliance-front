@@ -20,9 +20,7 @@ ul{
 .search{ 
   width:500px;
   height:50px;
-  width:500px;
-  height:50px;
-  border-radius: 10px;
+  
   border-radius: 10px;
   display: block;
   margin: 20px auto;
@@ -30,6 +28,3 @@ ul{
   font-size:1.5rem;
 }
 
-.serach > input{
-
-}

@@ -7,10 +7,10 @@ export default function TotalNav ({isRank}) {
              {isRank == true?<div className={styles.rank}>Rank</div>:<div></div>}
             
             <div className={styles.address}>Address</div>
-            <div className={styles.amount}>UATR</div>
-            <div className={styles.amount}>UHAR</div>
-            <div className={styles.amount}>UCOR</div>
-            <div className={styles.amount}>UORD</div>
+            <div className={styles.amount}>ATR</div>
+            <div className={styles.amount}>HAR</div>
+            <div className={styles.amount}>COR</div>
+            <div className={styles.amount}>ORD</div>
             <div className={styles.amount}>SCOR</div>
             <div className={styles.amount}>SORD</div>
             <div className={styles.amount}>Total</div>

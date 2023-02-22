@@ -13,21 +13,31 @@ export default function AccountReward() {
     console.log(address)
     const { isLoading, isError, data, error } = useQuery("account", async () => {
         const { data } = await axios.get(config.endpoint + `/account/${address}`)
-        console.log(data)
         return data
     })
+        
+    
     if (isLoading) {
         return <span>Loading...</span>;
     }
     
     if (isError) {
-        return <div>Error:{"Not Account"}</div>
+        return <div>Error:{"Not Account" + error.message}</div>
     }
-    
+    const newData = {
+        address,
+        uatr: Number(data.uatr) / 1000000,
+        uhar: Number(data.uhar)/ 1000000,
+        ucor: Number(data.ucor)/ 1000000,
+        uord: Number(data.uord)/ 1000000,
+        scor: Number(data.scor)/ 1000000,
+        sord: Number(data.sord)/ 1000000,
+        total:Number(data.total)/ 100000,
+    }
     return (
         <>
             <TotalNav isRank={false } />
-            <TotalRankingBoard rank={data} isRank={false } />
+            <TotalRankingBoard rank={newData} isRank={false } />
         </>
     )
 }
