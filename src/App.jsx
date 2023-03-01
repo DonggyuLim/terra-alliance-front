@@ -27,22 +27,28 @@ function App({name}) {
     <div className="App">   
       <Header />
       <Link to={"/uatr"}>
-        <button>uatr</button>
+        <button>atr</button>
       </Link>
       <Link to={"/uhar"}>
-        <button>uhar</button>
+        <button>har</button>
       </Link>
       <Link to={"/ucor"}>
-        <button>ucor</button>
+        <button>cor</button>
       </Link>
       <Link to={"/uord"}>
-        <button>uord</button>
+        <button>ord</button>
       </Link>
       <Link to={"/scor"}>
         <button>scor</button>
       </Link>
       <Link to={"/sord"}>
         <button>sord</button>
+      </Link>
+      <Link to={"/satr"}>
+        <button>satr</button>
+      </Link>
+      <Link to={"/shar"}>
+        <button>shar</button>
       </Link>
       <Link to={"/"}>
       <button  >total</button>
@@ -54,7 +60,7 @@ function App({name}) {
         className='search'
         type="text"
         value ={address}
-        placeholder="Please Your Atreides Address "
+        placeholder="Account Search"
         onChange={handleChange}
         />
         </form>

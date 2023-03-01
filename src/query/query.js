@@ -30,6 +30,14 @@ const query = {
         const data = await axios.get(config.endpoint + "/sord")
         return data
     },
+    satr: async () => {
+        const data = await axios.get(config.endpoint + "/satr")
+        return data
+    },
+    shar: async () => {
+        const data = await axios.get(config.endpoint + "/shar")
+        return data
+    },
     accountReward: async ({queryKey}) => {
         const address = queryKey[0]
         const data = await axios.get(config.endpoint + `/account/${address}`)

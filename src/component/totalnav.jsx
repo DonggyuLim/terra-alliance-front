@@ -13,6 +13,8 @@ export default function TotalNav ({isRank}) {
             <div className={styles.amount}>ORD</div>
             <div className={styles.amount}>SCOR</div>
             <div className={styles.amount}>SORD</div>
+            <div className={styles.amount}>SHAR</div>
+            <div className={styles.amount}>SATR</div>
             <div className={styles.amount}>Total</div>
         </div>
     )

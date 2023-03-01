@@ -102,7 +102,29 @@ const router = createBrowserRouter([
           element: <Token queryKey={"sord"} query={ query.sord} />
         }
       ]
-    },
+  },
+  {
+    path:"/satr",
+    element: <App name={"SATR" } />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path:"/satr",
+        element: <Token queryKey={"satr"} query={ query.satr} />
+      }
+    ]
+  },
+  {
+    path:"/shar",
+    element: <App name={"SHAR" } />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path:"/shar",
+        element: <Token queryKey={"shar"} query={ query.shar} />
+      }
+    ]
+  },
   
 ])
 

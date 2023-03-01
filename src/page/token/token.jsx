@@ -32,9 +32,9 @@ export default function Token({ queryKey, query }) {
     }
   });
 
-  if (isLoading) {
-    return <span>Loading...</span>;
-  }
+  // if (isLoading) {
+  //   return <span>Loading...</span>;
+  // }
 
   if (isError) {
     return <div>Error:{error.message}</div>

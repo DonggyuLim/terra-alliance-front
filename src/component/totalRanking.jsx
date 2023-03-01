@@ -14,6 +14,8 @@ export default function TotalRankingBoard({ rank,isRank }) {
             <div className={styles.amount}>{Number(rank.uord).toLocaleString()}</div>
             <div className={styles.amount}>{Number(rank.scor).toLocaleString()}</div>
             <div className={styles.amount}>{Number(rank.sord).toLocaleString()}</div> 
+            <div className={styles.amount}>{Number(rank.shar).toLocaleString()}</div> 
+            <div className={styles.amount}>{Number(rank.satr).toLocaleString()}</div> 
             <div className={styles.amount}>{Number(rank.total).toLocaleString()}</div>
         </li>
     )
